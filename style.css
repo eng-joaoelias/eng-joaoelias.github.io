@@ -60,3 +60,11 @@ section #services li span {
   padding: 20px;
   max-width: 300px;
 }
+
+h1, p {
+  color: #fc0303;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
