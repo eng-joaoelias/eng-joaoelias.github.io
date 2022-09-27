@@ -61,10 +61,7 @@ section #services li span {
   max-width: 300px;
 }
 
-h1, p {
+h1, p{
   color: #fc0303;
-  font-size: 16px;
   font-weight: bold;
-  margin-top: 0px;
-  margin-bottom: 1px;
 }
