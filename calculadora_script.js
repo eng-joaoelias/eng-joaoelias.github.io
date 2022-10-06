@@ -6,19 +6,24 @@ function inserirDadosDisplay(component) {
         }
         tela.value = tela.value + component.value;
     }
-    if(component.value === "C"){
+    if (component.value === "C") {
         tela.value = "";
     }
-    if(component.value === "←"){
+    if (component.value === "←") {
         let exibicao = tela.value
-        exibicao = exibicao.substr(0, exibicao.length-1);
+        exibicao = exibicao.substr(0, exibicao.length - 1);
         tela.value = exibicao;
     }
 }
 
-function resultadoExpressao() {
+function resultadoExpressao(component) {
     let tela = document.querySelector(".display");
     if (tela) {
-        tela.value = eval(tela.value);
+        if (tela.value === "" && component.value === "=") {
+            tela.value = "";
+        }
+        else {
+            tela.value = eval(tela.value);
+        }
     }
 }
