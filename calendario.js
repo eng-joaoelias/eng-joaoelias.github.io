@@ -1,13 +1,27 @@
 const data = new Date();
 
+data.setDate(1);
+
 const diasMeses = document.querySelector(".dias");
 
 const mes = data.getMonth();
 
-const ultimoDiaMes = new Date(data.getFullYear(),
-data.getMonth() + 1, 0);
+const ultimoDiaMesAtual = new Date(data.getFullYear(),
+data.getMonth() + 1, 0).getDate();
 
-console.log(ultimoDiaMes);
+const ultimoDiaMesAnterior = new Date(data.getFullYear(),
+data.getMonth(), 0).getDate();
+
+//console.log(ultimoDiaMesAnterior);
+
+const primeiroDiaIndice = parseInt(data.getDay());
+
+//console.log(ultimoDiaMesAtual);
+
+const ultimoDiaIndice = new Date(data.getFullYear(),
+data.getMonth() + 1, 0).getDay();
+
+const proximosDias = 7 - ultimoDiaIndice - 1;
 
 const listaMeses = [
     "Janeiro",
@@ -30,8 +44,16 @@ document.querySelector(".data p").innerHTML = data.toDateString();
 
 let listaDias = "";
 
-for (let index = 1; index <= parseInt(ultimoDiaMes.getDate()); index++) {
+for (let index = primeiroDiaIndice; index > 0; index--) {
+    listaDias = listaDias + `<div class="data-anterior">${ultimoDiaMesAnterior - index + 1}</div>`;
+}
+
+for (let index = 1; index <= parseInt(ultimoDiaMesAtual); index++) {
     listaDias = listaDias + `<div>${index}</div>`;
+}
+
+for (let index = 1; index <= proximosDias; index++) {
+    listaDias = listaDias + `<div class="proxima-data">${index}</div>`;
     diasMeses.innerHTML = listaDias;
 }
 
