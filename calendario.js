@@ -49,7 +49,12 @@ for (let index = primeiroDiaIndice; index > 0; index--) {
 }
 
 for (let index = 1; index <= parseInt(ultimoDiaMesAtual); index++) {
-    listaDias = listaDias + `<div>${index}</div>`;
+    if (index === new Date().getDate() && data.getMonth() === new Date().getMonth()) {
+        listaDias = listaDias + `<div class="hoje">${index}</div>`;
+    }
+    else{
+        listaDias = listaDias + `<div>${index}</div>`;
+    }
 }
 
 for (let index = 1; index <= proximosDias; index++) {
