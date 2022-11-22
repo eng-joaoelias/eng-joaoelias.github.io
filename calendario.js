@@ -1,66 +1,79 @@
 const data = new Date();
 
-data.setDate(1);
+const renderizaCalendario = () => {
+	data.setDate(1);
 
-const diasMeses = document.querySelector(".dias");
+	const diasMeses = document.querySelector(".dias");
 
-const mes = data.getMonth();
+	const mes = data.getMonth();
 
-const ultimoDiaMesAtual = new Date(data.getFullYear(),
-data.getMonth() + 1, 0).getDate();
+	const ultimoDiaMesAtual = new Date(data.getFullYear(),
+		data.getMonth() + 1, 0).getDate();
 
-const ultimoDiaMesAnterior = new Date(data.getFullYear(),
-data.getMonth(), 0).getDate();
+	const ultimoDiaMesAnterior = new Date(data.getFullYear(),
+		data.getMonth(), 0).getDate();
 
-//console.log(ultimoDiaMesAnterior);
+	//console.log(ultimoDiaMesAnterior);
 
-const primeiroDiaIndice = parseInt(data.getDay());
+	const primeiroDiaIndice = parseInt(data.getDay());
 
-//console.log(ultimoDiaMesAtual);
+	//console.log(ultimoDiaMesAtual);
 
-const ultimoDiaIndice = new Date(data.getFullYear(),
-data.getMonth() + 1, 0).getDay();
+	const ultimoDiaIndice = new Date(data.getFullYear(),
+		data.getMonth() + 1, 0).getDay();
 
-const proximosDias = 7 - ultimoDiaIndice - 1;
+	const proximosDias = 7 - ultimoDiaIndice - 1;
 
-const listaMeses = [
-    "Janeiro",
-    "Fevereiro",
-    "Março",
-    "Abril",
-    "Maio",
-    "Junho",
-    "Julho",
-    "Agosto",
-    "Setembro",
-    "Outubro",
-    "Novembro",
-    "Dezembro"
-];
+	const listaMeses = [
+		"Janeiro",
+		"Fevereiro",
+		"Março",
+		"Abril",
+		"Maio",
+		"Junho",
+		"Julho",
+		"Agosto",
+		"Setembro",
+		"Outubro",
+		"Novembro",
+		"Dezembro"
+	];
 
-document.querySelector(".data h1").innerHTML = listaMeses[mes];
+	document.querySelector(".data h1").innerHTML = listaMeses[mes];
 
-document.querySelector(".data p").innerHTML = data.toDateString();
+	document.querySelector(".data p").innerHTML = new Date().toDateString();
 
-let listaDias = "";
+	let listaDias = "";
 
-for (let index = primeiroDiaIndice; index > 0; index--) {
-    listaDias = listaDias + `<div class="data-anterior">${ultimoDiaMesAnterior - index + 1}</div>`;
-}
+	for (let index = primeiroDiaIndice; index > 0; index--) {
+		listaDias = listaDias + `<div class="data-anterior">${ultimoDiaMesAnterior - index + 1}</div>`;
+	}
 
-for (let index = 1; index <= parseInt(ultimoDiaMesAtual); index++) {
-    if (index === new Date().getDate() && data.getMonth() === new Date().getMonth()) {
-        listaDias = listaDias + `<div class="hoje">${index}</div>`;
-    }
-    else{
-        listaDias = listaDias + `<div>${index}</div>`;
-    }
-}
+	for (let index = 1; index <= parseInt(ultimoDiaMesAtual); index++) {
+		if (index === new Date().getDate() && data.getMonth() === new Date().getMonth()) {
+			listaDias = listaDias + `<div class="hoje">${index}</div>`;
+		} else {
+			listaDias = listaDias + `<div>${index}</div>`;
+		}
+	}
 
-for (let index = 1; index <= proximosDias; index++) {
-    listaDias = listaDias + `<div class="proxima-data">${index}</div>`;
-    diasMeses.innerHTML = listaDias;
-}
+	for (let index = 1; index <= proximosDias; index++) {
+		listaDias = listaDias + `<div class="proxima-data">${index}</div>`;
+		diasMeses.innerHTML = listaDias;
+	}
+};
+
+document.querySelector(".prev").addEventListener("click", () => {
+	data.setMonth(data.getMonth() - 1);
+	renderizaCalendario();
+});
+
+document.querySelector(".next").addEventListener("click", () => {
+	data.setMonth(data.getMonth() + 1);
+	renderizaCalendario();
+});
+
+renderizaCalendario();
 
 /*switch (mes) {
     case 0:
