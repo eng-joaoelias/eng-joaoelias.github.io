@@ -14,7 +14,7 @@ body{
     background-image: url(assets/imagens/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -296,4 +296,36 @@ a:hover{
     align-items: center;
     justify-content: center;
     color: #000000;
+}
+
+
+/*BOTAO DE VOLTAR*/
+.btn{
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 0.55rem 0;
+    width: 130px;
+    font-weight: 600;
+    background: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.btn.btn-white{
+    transition: all 0.5s ease-in-out;
+}
+
+.btn.btn-white:hover{
+    background: #107c0f;
+    border-color: #107c0f;
+    color: #fff;
 }
