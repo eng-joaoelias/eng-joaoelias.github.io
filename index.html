@@ -5,74 +5,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        type="text/css">
     <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
 </head>
 
 <body>
-    <section>
-        <h1>Página Inicial</h1>
-        <p>Essa é a página inicial para apresentação dos meus projetos desenvolvidos para web.</br></p>
-        <p>Lhe desejo boas vindas!</p>
-        <h2>Calculadora</h2>
-        <p><a href="calculator.html">Clique aqui</a> para abrir a calculadora (simples, sem css).</p>
-        </br> </br>
-        <h2>Página tabuada</h2>
-        <p><a href="tabuada.html">Clique aqui</a> para abrir a tabuada (simples, sem css).</p>
-        <h2>Jogo da adivinhação</h2>
-        <p><a href="adivinhacao.html">Clique aqui</a> para jogar o jogo da adivinhação! (simples, sem css)</p>
-        <h2>Analisador de números</h2>
-        <p>Você gosta de saber todos os dados de uma lista com números? Então, certamente, vai gostar do analisador de
-            números que elaborei.<br>
-            <a href="AnalisadorDeNumeros.html">Clique aqui</a> para adicionar numeros em uma lista dinâmica e saber
-            muito sobre essa lista!
-        </p>
-        <h2>Bela Calculadora</h2>
-        <p><a href="calculadora.html">Clique aqui</a> para fazer diversas operações matemáticas com estilo!</p>
-        <h2>O Calendário 📅</h2>
-        <p>Quer saber que dia é hoje?? Então, <a href="calendario.html">clique aqui</a> para ver qual o dia de hoje em um design incrível!</p>
-        <ul id="services">
-            <h2>MINHAS MÍDIAS SOCIAIS</h2>
-            <li>
-                <div class="facebook">
-                    <a href="https://facebook.com/joao.elias.2000">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
+    <header class="header-container">
+        <div class="header">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-items">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#">Projetos</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <span>Facebook</span>
-            </li>
-            <li>
-                <div class="linkedin">
-                    <a href="https://br.linkedin.com/in/jo%C3%A3o-elias-ferraz-santana-9a47a218a">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <span>LinkedIn</span>
-            </li>
-            <li>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/eliasjoao1/">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <span>Instagram</span>
-            </li>
-            <li>
-                <div class="github">
-                    <a href="https://github.com/eng-joaoelias">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <span>Github</span>
-            </li>
-        </ul>
-        <p class="credits"><a href="https://colorlib.com/wp/html-social-buttons-templates/" target="blank"><i
-                    class="fa fa-arrow-right" aria-hidden="true"></i> More Icon Examples</a></p>
-    </section>
+            </div>
+        </div>
 
+        <h1>
+            João Elias Ferraz
+        </h1>
+
+        <h2>Engenheiro da Computação</h2>
+
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-elias-ferraz-santana-9a47a218a/">LinkedIn</a>
+            <a href="https://gitlab.com/users/joao_elias/projects">GitLab</a>
+            <a href="https://github.com/eng-joaoelias">GitHub</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>P01: Calculadora</h2>
+                    <p><a href="calculator.html">Vem ver!</a></p>
+                </div>
+            </div>
+            <div class="card-text">
+                Uma calculadora simples, sem CSS.
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>P02: Página tabuada</h2>
+                    <p><a href="tabuada.html">Vem ver!</a></p>
+                </div>
+            </div>
+            <div class="card-text">
+                Uma tabada simples, também feita sem CSS.
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>P03: Jogo da advinhação</h2>
+                    <p><a href="adivinhacao.html">Vem ver!</a></p>
+                </div>
+            </div>
+            <div class="card-text">
+                Esse é o jogo da advinhação, feito sem CSS.
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>P04: Analisador de números</h2>
+                    <p><a href="AnalisadorDeNumeros.html">Vem ver!</a></p>
+                </div>
+            </div>
+            <div class="card-text">
+                Você gosta de saber todos os dados de uma lista com números? Então, certamente, vai gostar do analisador de
+                números que elaborei.<br>
+                Nele, você adiciona números em uma lista dinâmica.
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>P05: Calculadora Estilosa</h2>
+                    <p><a href="calculadora.html">Vem ver!</a></p>
+                </div>
+            </div>
+            <div class="card-text">
+                Uma calculadora simples que analisa operações matemáticas, estilizada.
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>P06: O Calendário 📅</h2>
+                    <p><a href="calendario.html">Vem ver!</a></p>
+                </div>
+            </div>
+            <div class="card-text">
+                Quer saber que dia é hoje?? Então, esse lindo calendário lhe informará isso em um design incrível!
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        Feito por João Elias Ferraz Santana. Todos os direitos reservados.
+    </footer>
 </body>
 
 </html>
