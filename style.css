@@ -329,27 +329,3 @@ a:hover{
     border-color: #107c0f;
     color: #fff;
 }
-
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #107c0f;
-    overflow: overlay;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-    background: transparent;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.005);
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #107c0f;
-    border-radius: 10px;
-    border: 1px solid #ffffff;
-  }
