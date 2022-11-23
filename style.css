@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: #000000; 
+    color: #c203c2; 
 }
 
 .header-container{
@@ -42,9 +42,9 @@ h2{
 
 .social-media a{
     text-decoration: none;
-    color: #000000;
+    color: #800080;
     padding: 1rem 4rem;
-    border: 1px solid #000000;
+    border: 1px solid #800080;
     min-width: 4rem;
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@ a:hover{
 .checkbox .trace{
     width: 50px;
     height: 2px;
-    background-color: #000000;
+    background-color: #c203c2;
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
@@ -329,3 +329,27 @@ a:hover{
     border-color: #107c0f;
     color: #fff;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #107c0f;
+    overflow: overlay;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.005);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #107c0f;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+  }
