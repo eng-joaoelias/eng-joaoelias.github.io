@@ -28,11 +28,15 @@ h1{
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    margin-left: 10px;
+    text-align: center;
 }
 
 h2{
     text-transform: uppercase;
     letter-spacing: 4px;
+    margin-left: 10px;
+    text-align: center;
 }
 
 .social-media{
@@ -45,6 +49,7 @@ h2{
     color: #e9ebed;
     padding: 1rem 4rem;
     border: 1px solid #e9ebed;
+    border-radius: 10px;
     min-width: 4rem;
     display: flex;
     align-items: center;
@@ -330,4 +335,11 @@ a:hover{
     background: #107c0f;
     border-color: #107c0f;
     color: #fff;
+}
+
+.presentation{
+    background-color: rgba(41, 93, 9, 0.446783);
+    margin-top: center;
+    border-radius: 15px;
+    margin-left: 50px;
 }
