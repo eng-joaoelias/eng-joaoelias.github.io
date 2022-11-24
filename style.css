@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: #c203c2; 
+    color: #e9ebed; 
 }
 
 .header-container{
@@ -42,9 +42,9 @@ h2{
 
 .social-media a{
     text-decoration: none;
-    color: #800080;
+    color: #e9ebed;
     padding: 1rem 4rem;
-    border: 1px solid #800080;
+    border: 1px solid #e9ebed;
     min-width: 4rem;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@ h2{
 
 a:hover{
     cursor: pointer;
-    background-color: #00eeee;
+    background-color: #69ab3d;
 }
 
 /*MENU HAMBURGER*/
@@ -81,7 +81,7 @@ a:hover{
 .checkbox .trace{
     width: 50px;
     height: 2px;
-    background-color: #c203c2;
+    background-color: #e9ebed;
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
@@ -142,11 +142,13 @@ a:hover{
 
 .menu-items ul li a{
     margin: 10px 0;
-    color: #000000;
+    color: #c1f7e0;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
+    border-radius: 18px;
+    padding: 3px 8px;
 }
 
 /*ANIMACAO DO MENU*/
