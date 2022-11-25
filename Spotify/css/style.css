@@ -102,3 +102,53 @@ html, body{
 .sidebar__playlists a:hover{
     color: white;
 }
+
+/*PARTE PRINCIPAL DA PLATAFORMA*/
+
+.main{
+    width: calc(100% - 250px);
+    background-color: rgb(30, 30, 30);
+    height: 100%;
+
+    float: left;
+    padding: 15px 50px;
+    overflow-y: auto;
+
+}
+
+.main__row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.main__wrapper{
+    padding-bottom: 200px;
+}
+
+.main__row__title{
+    width: 100%;
+
+}
+
+.main__row__title h2{
+    color: white;
+}
+
+.main__col{
+    cursor: pointer;
+    width: 20%;
+    margin-right: 1%;
+    margin-top: 20px;
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main__col img{
+    width: 180px;
+    height: 180px;
+}
