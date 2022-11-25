@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto";
+    font-family: 'Quicksand', sans-serif;
 }
 
 html, body{
@@ -151,4 +153,43 @@ html, body{
 .main__col img{
     width: 180px;
     height: 180px;
+}
+
+.main__col h3{
+    color: white;
+    margin: 8px 0;
+}
+
+.main__col p{
+    color: rgb(100, 100, 100);
+    margin: 8px 0;
+    font-size: 13px;
+    text-align: left;
+}
+
+.player{
+    width: 100%;
+    padding: 20px;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgb(60, 60, 60);
+}
+
+.player__artist{
+    width: 20%;
+}
+
+.player__artist img{
+    max-width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.player__artist h3 > span{
+    color: rgb(200, 200, 200);
+    font-size: 13px;
+    
 }
