@@ -151,8 +151,8 @@ html, body{
 }
 
 .main__col img{
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
 }
 
 .main__col h3{
@@ -223,4 +223,31 @@ html, body{
     border-radius: 8px;
     display: inline-block;
     background: rgb(130, 130, 130);
+}
+
+.player__control__progress2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 7px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+@media screen and (max-width: 1700px){
+    .main__col{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main{width: 100%;}
+    .sidebar{
+        display: none;
+    }
+    .main__col{
+        width: 48%;
+        margin-right: 2%;
+    }
 }
