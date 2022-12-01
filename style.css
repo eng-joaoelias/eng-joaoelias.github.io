@@ -255,11 +255,13 @@ a:hover {
 }
 
 .card-wrapper h2 {
-    font-size: 40px;
+    font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 4px;
     margin: 0;
     transition: 0.5s ease-in-out;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
 }
 
 .card-wrapper p {
@@ -330,12 +332,24 @@ a:hover {
 
 .btn.btn-white {
     transition: all 0.5s ease-in-out;
+    text-decoration: none;
 }
 
 .btn.btn-white:hover {
     background: #107c0f;
     border-color: #107c0f;
     color: #fff;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #69ab3d;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #e9ebed;
 }
 
 .presentation {
