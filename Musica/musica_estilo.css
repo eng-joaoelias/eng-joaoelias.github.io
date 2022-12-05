@@ -43,7 +43,7 @@ h2{
 }
 
 progress{
-    width: 40%;
+    width: 0%;
     height: 6px;
     background-color: #333;
 }
@@ -53,7 +53,7 @@ progress{
     height: 20px;
     background-color: #eee;
     border-radius: 100%;
-    margin-left: -2px;
+    margin-left: -10px;
 }
 
 .tempo{
@@ -75,7 +75,7 @@ progress{
     cursor: pointer;
 }
 
-.botao-pause{
+.botao-pause, #botao-pause{
     display: none;
 }
 
@@ -83,3 +83,10 @@ progress{
     font-size: 40px;
     cursor: pointer;
 }
+
+button{
+    background: transparent;
+    color: #eee;
+    border: none;
+}
+
