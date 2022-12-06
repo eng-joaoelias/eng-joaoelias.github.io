@@ -27,14 +27,14 @@ document.querySelector("#anterior").addEventListener("click", () => {
         window.alert("INÍCIO DA LISTA!\n")
         renderizarMusica(posicaoMusica);
     }
-    mudaEstiloPlay();
+    mudaEstiloPause();
 });
 
 document.querySelector("#proxima").addEventListener("click", () => {
     if (posicaoMusica < (musicas.length) - 1) {
         posicaoMusica++;
         renderizarMusica(posicaoMusica);
-        mudaEstiloPlay();
+        mudaEstiloPause();
     }
     else{
         window.alert("FIM DA LISTA!\n");
