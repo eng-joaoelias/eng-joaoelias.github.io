@@ -22,7 +22,7 @@ body{
 
 .navigation{
     position: absolute;
-    bottom: 20px;
+    bottom: 23.6px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
@@ -117,6 +117,6 @@ img{
 
 figcaption{
     font-family: 'Poppins', sans-serif;
-    font-size: 21px;
+    font-size: 16.66px;
     color: #e9ebed;
 }
