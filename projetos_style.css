@@ -34,8 +34,8 @@
 
 .container-projeto .slide-container .slide .content-projeto h3{
     font-size: 35px;
-    color: #AED36C;
-    background-color: #69AB3D;
+    color: #E9EBED;
+    background-color: #295D09;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     width: 40%;
@@ -43,10 +43,10 @@
 
 .container-projeto .slide-container .slide .content-projeto p{
     font-size: 20px;
-    color: #295D09;
+    color: #AED36C;
     width: 40%;
     height: 10%;
-    background-color: #69AB3D;
+    background-color: #295D09;
     /*border-radius: 8px;*/
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
