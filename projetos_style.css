@@ -165,6 +165,14 @@
     height: 100vh;
 }
 
+.container-projeto .slide-container:nth-child(11) .slide{
+    background: url(assets/imagens/p11.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
 .container-projeto #anterior,
 .container-projeto #proximo{
     position: absolute;
