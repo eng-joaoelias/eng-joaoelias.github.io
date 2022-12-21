@@ -11,6 +11,7 @@ const iconClima = document.querySelector("#clima-icon");
 const bandeiraIcon = document.querySelector("#pais");
 const umidade = document.querySelector("#umidade span");
 const velVento = document.querySelector("#vento span");
+const dadosClimaContainer = document.querySelector("#clima-dados");
 
 
 //Funções
@@ -33,7 +34,8 @@ const mostraDadosClima = async (cidade) => {
     iconClima.setAttribute("src", `http://openweathermap.org/img/wn/${dados.weather[0].icon}.png`);
     bandeiraIcon.setAttribute("src", apiPaisURL + dados.sys.country);
     umidade.innerText = `${dados.main.humidity}%`;
-    velVento.innerText = `${dados.wind.speed} km/h`
+    velVento.innerText = `${dados.wind.speed} km/h`;
+    dadosClimaContainer.classList.remove("hide");
 }
 
 
@@ -45,3 +47,13 @@ btnBusca.addEventListener("click", (e) => {
 
     mostraDadosClima(cidade)
 });
+
+cidadeTxt.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        e.preventDefault();
+
+        const cidade = cidadeTxt.value;
+
+        mostraDadosClima(cidade)
+    }
+})
