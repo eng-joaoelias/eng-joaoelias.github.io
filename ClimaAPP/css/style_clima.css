@@ -85,6 +85,11 @@ body{
     height: 15px;
 }
 
+#descricao{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
 #descricao-container{
     display: flex;
     justify-content: center;
