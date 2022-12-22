@@ -31,7 +31,7 @@ const mostraDadosClima = async (cidade) => {
     nomeCidade.innerText = dados.name;
     temperatura.innerText = parseInt(dados.main.temp);
     descricao.innerText = dados.weather[0].description;
-    iconClima.setAttribute("src", `http://openweathermap.org/img/wn/${dados.weather[0].icon}.png`);
+    iconClima.setAttribute("src", `https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`);
     bandeiraIcon.setAttribute("src", apiPaisURL + dados.sys.country);
     umidade.innerText = `${dados.main.humidity}%`;
     velVento.innerText = `${dados.wind.speed} km/h`;
