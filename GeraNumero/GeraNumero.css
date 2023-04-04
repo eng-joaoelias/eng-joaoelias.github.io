@@ -91,3 +91,18 @@ body{
     font-weight: 600;
     
 }
+
+@media screen and (max-width: 768px) {
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        min-width: 96vw;
+    }
+    h2{
+        text-align: center;
+        justify-content: center;
+    }
+}
