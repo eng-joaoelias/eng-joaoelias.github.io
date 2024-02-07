@@ -3,7 +3,7 @@ let banco = [
     {'tarefa': 'NetFlix', 'status': 'checked'}
 ]
 
-function criarItem(tarefa, status = ''){
+function criarItem(tarefa, status){
     const item = document.createElement('label');
     item.classList.add("todo__item");
 
@@ -16,8 +16,16 @@ function criarItem(tarefa, status = ''){
     document.getElementById("todoList").appendChild(item);
 }
 
+function limparTarefas(){
+    const lista = document.querySelector("#todoList");
+    while (lista.firstChild) {
+        lista.removeChild(lista.lastChild);
+    }
+}
+
 function atualizarTela(){
-    banco.forEach(item => criarItem(item.tarefa));
+    limparTarefas();
+    banco.forEach(item => criarItem(item.tarefa, item.status));
 }
 
 atualizarTela();
