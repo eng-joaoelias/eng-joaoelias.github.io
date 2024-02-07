@@ -28,17 +28,18 @@ function atualizarTela(){
     banco.forEach(item => criarItem(item.tarefa, item.status));
 }
 
-inputTextoTarefa = document.querySelector("#newItem");
+inputTextoTarefa = document.querySelector("");
 
 const adicionarItem = (evento) => {
     const tecla = evento.key;
+    const tarefaDescricao = evento.target.value;
     if (tecla === "Enter") {
-        banco.push({'tarefa': evento.target.value, 'status': 'checked'});
+        banco.push({'tarefa': tarefaDescricao, 'status': 'checked'});
         atualizarTela();
         evento.target.value = "";
     }
 }
 
-inputTextoTarefa.addEventListener("keypress", adicionarItem);
+document.querySelector("#newItem").addEventListener("keypress", adicionarItem);
 
 atualizarTela();
