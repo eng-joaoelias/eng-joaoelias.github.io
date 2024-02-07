@@ -43,11 +43,24 @@ function removerItem(indice){
     atualizarTela();
 }
 
+function atualizarItem(indice){
+    const situacao = banco[indice].status;
+    if (situacao === '') {
+        banco[indice].status = 'checked';
+    } else{
+        banco[indice].status = ''
+    }
+    atualizarTela();
+}
+
 const clickItem = (evento) => {
     const elemento = evento.target;
     if (elemento.type === 'button') {
         const indice = elemento.dataset.indice;
         removerItem(indice);
+    } else if (elemento.type === 'checkbox') {
+        const indice = elemento.dataset.indice;
+        atualizarItem(indice);
     }
 }
 
