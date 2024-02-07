@@ -142,7 +142,7 @@
 }
 
 .container-projeto .slide-container:nth-child(8) .slide{
-    background: url(assets/imagens/p08.png);
+    background: url(assets/imagens/p08.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -174,39 +174,7 @@
 }
 
 .container-projeto .slide-container:nth-child(12) .slide{
-    background: url(assets/imagens/p12.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-}
-
-.container-projeto .slide-container:nth-child(13) .slide{
-    background: url(assets/imagens/p13.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-}
-
-.container-projeto .slide-container:nth-child(14) .slide{
-    background: url(assets/imagens/p14.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-}
-
-.container-projeto .slide-container:nth-child(15) .slide{
-    background: url(assets/imagens/p15.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-}
-
-.container-projeto .slide-container:nth-child(16) .slide{
-    background: url(assets/imagens/p16.png);
+    background: url(assets/imagens/p12.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
