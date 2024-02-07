@@ -38,9 +38,17 @@ const adicionarItem = (evento) => {
     }
 }
 
+function removerItem(indice){
+    banco.splice(indice,1);
+    atualizarTela();
+}
+
 const clickItem = (evento) => {
     const elemento = evento.target;
-    console.log(elemento);
+    if (elemento.type === 'button') {
+        const indice = elemento.dataset.indice;
+        removerItem(indice);
+    }
 }
 
 document.querySelector("#newItem").addEventListener("keypress", adicionarItem);
