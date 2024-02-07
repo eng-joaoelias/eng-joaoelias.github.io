@@ -1,7 +1,15 @@
-let banco = [
+'use strict';
+
+/*let banco = [
     {'tarefa': 'Estudar JS', 'status': ''},
     {'tarefa': 'NetFlix', 'status': 'checked'}
-]
+];*/
+
+localStorage.setItem
+
+const getBanco = () => JSON.parse(localStorage.getItem('todoList')) ?? [];
+
+const setBanco = (banco) => localStorage.setItem('todoList', JSON.stringify(banco));
 
 function criarItem(tarefa, status, indice){
     const item = document.createElement('label');
@@ -25,6 +33,7 @@ function limparTarefas(){
 
 function atualizarTela(){
     limparTarefas();
+    const banco = getBanco();
     banco.forEach((item, indice) => criarItem(item.tarefa, item.status, indice));
 }
 
@@ -32,24 +41,31 @@ const adicionarItem = (evento) => {
     const tecla = evento.key;
     const tarefaDescricao = evento.target.value;
     if (tecla === "Enter") {
-        banco.push({'tarefa': tarefaDescricao, 'status': 'checked'});
+        const banco = getBanco();
+        banco.push({'tarefa': tarefaDescricao, 'status': ''});
+        setBanco(banco);
         atualizarTela();
-        tarefaDescricao = ""; //limpar a tarefa
+        //tarefaDescricao = ''; //limpar a tarefa
+        document.querySelector('[name="textoTarefa"]').value = "";
     }
 }
 
 function removerItem(indice){
+    const banco = getBanco();
     banco.splice(indice,1);
+    setBanco(banco);
     atualizarTela();
 }
 
 function atualizarItem(indice){
+    const banco = getBanco();
     const situacao = banco[indice].status;
     if (situacao === '') {
         banco[indice].status = 'checked';
     } else{
         banco[indice].status = ''
     }
+    setBanco(banco);
     atualizarTela();
 }
 
