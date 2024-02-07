@@ -7,4 +7,6 @@ function criarItem(){
         <div></div>
         <input type = "button" value = "X">
     `
+
+    document.getElementById("todoList").appendChild(item);
 }
