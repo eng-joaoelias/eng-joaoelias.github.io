@@ -3,14 +3,14 @@ let banco = [
     {'tarefa': 'NetFlix', 'status': 'checked'}
 ]
 
-function criarItem(tarefa, status){
+function criarItem(tarefa, status, indice){
     const item = document.createElement('label');
     item.classList.add("todo__item");
 
     item.innerHTML = `
-        <input type = "checkbox" ${status}>
+        <input type = "checkbox" ${status} data-indice = ${indice}>
         <div>${tarefa}</div>
-        <input type = "button" value = "X">
+        <input type = "button" value = "X" data-indice = ${indice}>
     `
 
     document.getElementById("todoList").appendChild(item);
@@ -25,10 +25,8 @@ function limparTarefas(){
 
 function atualizarTela(){
     limparTarefas();
-    banco.forEach(item => criarItem(item.tarefa, item.status));
+    banco.forEach((item, indice) => criarItem(item.tarefa, item.status, indice));
 }
-
-inputTextoTarefa = document.querySelector("");
 
 const adicionarItem = (evento) => {
     const tecla = evento.key;
@@ -36,10 +34,16 @@ const adicionarItem = (evento) => {
     if (tecla === "Enter") {
         banco.push({'tarefa': tarefaDescricao, 'status': 'checked'});
         atualizarTela();
-        evento.target.value = "";
+        tarefaDescricao = ""; //limpar a tarefa
     }
 }
 
+const clickItem = (evento) => {
+    const elemento = evento.target;
+    console.log(elemento);
+}
+
 document.querySelector("#newItem").addEventListener("keypress", adicionarItem);
+document.querySelector("#todoList").addEventListener("click", clickItem);
 
 atualizarTela();
