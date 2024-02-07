@@ -19,7 +19,7 @@ function geraNumeroNaString(min, max, qtdNumeros) {
             index--;
         }
     }
-    return numeros;
+    return numeros.sort((a, b) => a - b);
 }
 
 btnGera.addEventListener("click", ()=>{
