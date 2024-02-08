@@ -17,7 +17,7 @@
 
 <body>
     <div id="register-container">
-        
+
         <div id="register-banner">
             <div id="banner-layer">
                 <h1>Boas vindas!</h1>
@@ -27,7 +27,7 @@
         <div id="register-form">
             <h2>Crie sua conta:</h2>
             <p>Registre-se para utilizar todas as funcionalidades do sistema</p>
-            
+
             <div class="form-control">
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="name" placeholder="Digite seu nome...">
@@ -36,17 +36,27 @@
             <div class="form-control">
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email" placeholder="Digite seu e-mail..." required>
-            </div> 
+            </div>
 
             <div class="form-control">
                 <label for="senha">Senha</label>
                 <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." required>
             </div>
 
+            <p>Quer ajuda para criar uma senha segura?
+                <span id="generatepassword">
+                    Clique aqui!
+                </span>
+            </p>
+
+
             <div class="form-control">
                 <label for="senhaConfirma">Confirmação de senha</label>
-                <input type="password" name="senhaConfirma" id="senhaConfirma" placeholder="Confirme sua senha..." required>
-            </div> 
+                <input type="password" name="senhaConfirma" id="senhaConfirma" placeholder="Confirme sua senha..."
+                    required>
+            </div>
+
+            <input type="submit" value="Cadastrar no sistema">
         </div>
     </div>
 </body>
