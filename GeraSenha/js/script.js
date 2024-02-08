@@ -13,7 +13,7 @@ const getLetraMaiuscula = () =>{
 }
 
 const getNumero = () =>{
-    return Math.floor(Math.random()*10).toString;
+    return Math.floor(Math.random()*10).toString();
 }
 
 const getSimbolo = () =>{
