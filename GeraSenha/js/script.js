@@ -12,6 +12,15 @@ const getLetraMaiuscula = () =>{
     return String.fromCharCode(Math.floor(Math.random()*26) + 65);
 }
 
+const getNumero = () =>{
+    return Math.floor(Math.random()*10).toString;
+}
+
+const getSimbolo = () =>{
+    const simbolos = "#%&'()*+,-./:;<>=?@[\]^_{|}~/";
+    return simbolos[Math.floor(Math.random()*simbolos.length)]
+}
+
 //Eventos
 btnGeraSenha.addEventListener("click", () => {
 
