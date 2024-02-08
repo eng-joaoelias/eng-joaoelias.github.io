@@ -17,12 +17,43 @@ const getNumero = () =>{
 }
 
 const getSimbolo = () =>{
-    const simbolos = "#%&'()*+,-./:;<>=?@[\]^_{|}~/";
+    const simbolos = "#%&'()*+,-./:;<>=?@^_{|}~/";
     return simbolos[Math.floor(Math.random()*simbolos.length)]
+}
+
+const gerarSenha = (getLetraMinuscula, getLetraMaiuscula, getNumero, getSimbolo) => {
+    
+    let senha = "";
+
+    const comprimentoSenha = 15;
+
+    const geradores = [
+        getLetraMaiuscula,
+        getLetraMinuscula,
+        getNumero,
+        getSimbolo
+    ];
+
+    for (let index = 0; index < comprimentoSenha; index = index + geradores.length) {
+
+        geradores.forEach( () => {
+            const valAleatorio = geradores[Math.floor(Math.random() * geradores.length)]();
+            senha = senha + valAleatorio;
+        });
+
+    }
+
+    senha = senha.slice(0, senha.length);
+
+    btnSenhaGerada.style.display = "block";
+    btnSenhaGerada.querySelector("h4").innerText = senha;
 }
 
 //Eventos
 btnGeraSenha.addEventListener("click", () => {
-
+    gerarSenha(getLetraMaiuscula,
+        getLetraMinuscula,
+        getNumero,
+        getSimbolo);
 }
 );
