@@ -109,10 +109,27 @@ input:focus{
     color: #333;
     text-align: center;
     margin-bottom: 1rem;
-
+    display: none;
 }
 
 #register-form #generated-password p{
     color: #81d340;
     margin-bottom: 0.5rem;
+}
+
+#register-form input[type="submit"]{
+    background-color: #81d340;
+    color: #fff;
+    opacity: 0.8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: 0.4s;
+}
+
+#register-form input[type="submit"]:hover{
+    opacity: 1;
 }
