@@ -89,3 +89,20 @@ input:focus{
     border-bottom: 1px solid #AAA;
     padding: 0.6rem 0;
 }
+
+#generatepassword{
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#generatepassword:hover{
+    color: #0099ff;
+}
+
+#register-form #generated-password{
+    border: 1px solid #0099ff;
+    border-radius: 4px;
+    font-weight: bold;
+    
+}
