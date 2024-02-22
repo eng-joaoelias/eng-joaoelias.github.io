@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
     --primary-color: #107C10;
     --secondary-color: #0F0F0B;
@@ -7,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
 }
 html {
     font-size: 62.5%;
@@ -37,6 +40,7 @@ body {
     box-shadow: 1px 1px 5px var(--secondary-color);
     font-size: 3rem;
     color: var(--primary-color);
+    border-radius: 15px;
 }
 
 .todo__list {
@@ -54,6 +58,7 @@ body {
     align-items: center;
     padding: 5px;
     box-shadow: 1px 1px 5px var(--secondary-color);
+    border-radius: 10px;
 }
 .todo__item > div {
     width: 80%;
@@ -94,6 +99,7 @@ body {
     box-shadow: 1px 1px 5px var(--secondary-color);
     margin: 10px;
     font: inherit;
+    border-radius: 15px;
 }
 
 .todo__new-item > input{
