@@ -11,7 +11,7 @@ let rotationAngle = 0;
 let speedX = 0;
 let speedY = 0;
 const acceleration = 0.2; // Aceleração do carro
-const maxSpeed = 5; // Velocidade máxima do carro
+const maxSpeed = 8; // Velocidade máxima do carro
 const rotationSpeed = 3; // Velocidade de rotação
 
 document.addEventListener('keydown', (event) => {
@@ -25,6 +25,14 @@ document.addEventListener('keyup', (event) => {
 });
 
 function moveCar() {
+
+    // Cálculo do módulo da velocidade escalar do carro
+    const speedModule = Math.sqrt(speedX * speedX + speedY * speedY);
+
+    // Atualizar o texto do velocímetro
+    const velocimetro = document.getElementById('velocimetro');
+    velocimetro.textContent = Math.round(speedModule) + " km/h";
+
     if (keysPressed['w']) {
         speedX += Math.cos((rotationAngle - 90) * (Math.PI / 180)) * acceleration;
         speedY += Math.sin((rotationAngle - 90) * (Math.PI / 180)) * acceleration;
