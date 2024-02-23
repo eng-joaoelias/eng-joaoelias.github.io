@@ -80,3 +80,17 @@ function moveCar() {
 }
 
 setInterval(moveCar, 50);
+
+// Selecionar o modal e o botão de fechar
+const modal = document.getElementById('modal');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+// Mostrar o modal quando a página for carregada
+window.onload = function() {
+    modal.style.display = 'block';
+}
+
+// Ocultar o modal quando o botão de fechar for clicado
+closeModalBtn.addEventListener('click', function() {
+    modal.style.display = 'none';
+});
