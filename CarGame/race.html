@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,25 @@
     <div class="game-container">
         <div id="car"></div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal-container">
+        <input id="modal-toggle" type="checkbox">
+        <button>Como Jogar</button>
+        <div class="modal-backdrop">
+            <div class="modal-content">
+                <label class="modal-close" for="modal-toggle">x</label>
+                <h2>Instruções de Jogo</h2>
+                <hr />
+                <p>Acelere com a tecla "W".</p>
+                <p>Desacelere com a tecla "S".</p>
+                <p>Vire para a esquerda com a tecla "A".</p>
+                <p>Vire para a direita com a tecla "D".</p>
+                <label class="modal-close button" for="modal-toggle">Entendi!</label>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
