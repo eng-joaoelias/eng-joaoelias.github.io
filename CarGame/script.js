@@ -24,6 +24,26 @@ document.addEventListener('keyup', (event) => {
     keysPressed[key] = false;
 });
 
+let handbrakeActive = false; // Variável para rastrear se o freio de mão está ativado
+
+// Evento de tecla pressionada para ativar o freio de mão
+document.addEventListener('keydown', (event) => {
+    const key = event.key.toLowerCase();
+
+    if (key === ' ') {
+        handbrakeActive = true;
+    }
+});
+
+// Evento de tecla liberada para desativar o freio de mão
+document.addEventListener('keyup', (event) => {
+    const key = event.key.toLowerCase();
+
+    if (key === ' ') {
+        handbrakeActive = false;
+    }
+});
+
 function moveCar() {
 
     // Verificar colisão com os obstáculos
@@ -34,6 +54,12 @@ function moveCar() {
             speedY = 0;
         }
     });
+
+    // Aplicar freio de mão se estiver ativado
+    if (handbrakeActive) {
+        speedX *= 0.9; // Ajuste conforme necessário para a desaceleração do freio de mão
+        speedY *= 0.9;
+    }
 
     // Cálculo do módulo da velocidade escalar do carro
     const speedModule = Math.sqrt(speedX * speedX + speedY * speedY);
