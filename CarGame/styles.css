@@ -218,3 +218,13 @@ body, html {
 .modal-container #modal-toggle-2:checked ~ .modal-backdrop .modal-content .modal-close:hover {
   color: #333;
 }
+
+/* Estilos para os obstáculos */
+.obstacle {
+  position: absolute;
+  width: 50px; /* Defina a largura desejada */
+  height: 50px; /* Defina a altura desejada */
+  background-image: url('assets/obstacle.png'); /* Adicione a imagem do obstáculo */
+  background-size: cover;
+  /* Adicione outros estilos conforme necessário */
+}
