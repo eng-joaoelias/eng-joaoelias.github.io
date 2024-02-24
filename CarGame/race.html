@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
 </head>
+
 <body>
     <div class="game-container">
         <div id="car"></div>
@@ -33,6 +35,21 @@
         </div>
     </div>
 
+    <!-- Modal de créditos -->
+    <div class="modal-container">
+        <input id="modal-toggle-2" type="checkbox" style="display: none;"> <!-- Ocultar o checkbox -->
+        <div class="modal-backdrop">
+            <div class="modal-content">
+                <label class="modal-close" for="modal-toggle-2">x</label>
+                <h2>Créditos</h2>
+                <hr />
+                <p>Desenvolvido por João Elias Ferraz Santana. Todos os direitos reservados.</p>
+                <label class="modal-close button" for="modal-toggle-2">Fechar</label>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
