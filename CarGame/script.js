@@ -106,3 +106,12 @@ function resetCarPosition() {
     speedY = 0;
     rotationAngle = 0;
 }
+
+document.addEventListener('keydown', (event) => {
+    const key = event.key.toLowerCase();
+    
+    if (key === 'j') {
+        const modalToggle = document.getElementById('modal-toggle-2');
+        modalToggle.checked = !modalToggle.checked;
+    }
+});
