@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+}
+
 .sobre {
     width: 100%;
     padding: 78px 0px;
@@ -75,28 +79,46 @@ button:hover {
     cursor: pointer;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-    .sobre img {
-        height: auto;
-        width: 270px;
-        margin-bottom: 60px;
+    body {
+        overflow-x: hidden;
     }
+
     .principal {
-        display: inline;
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens na vertical */
     }
+
+    .sobre img {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .sobre-texto {
+        width: 90%;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .sobre-texto p {
+        text-align: justify; /* Centraliza o texto */
+    }
+
     .sobre-texto h1 {
-        font-size: 70px;
+        font-size: 70px; /* Ajusta o tamanho do título */
     }
+
     .sobre-texto h5 {
         font-size: 20px;
-        max-width: 72%;
+        max-width: 100%; /* Define largura máxima para evitar que o texto ultrapasse a largura do contêiner */
     }
+
     .sobre-texto p {
-        max-width: 60%;
-        text-align: justify;
+        max-width: 100%; /* Define largura máxima para evitar que o texto ultrapasse a largura do contêiner */
     }
 }
