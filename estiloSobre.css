@@ -15,11 +15,19 @@ body {
     background-color: #295d09;
 }
 
+.sobre .principal .sombra-interna {
+    border-radius: 400px;
+    background: linear-gradient(to right, rgba(41, 93, 9, 0.5), rgba(255, 255, 255, 0.1)), linear-gradient(to right, #1f3d06, #91a552); /* Modifica as cores do gradiente */
+	background-size: 180% 180%;
+	animation: gradient-animation 5s ease infinite;
+    border-radius: 400px;
+    border: 3px #aed36c solid;
+}
+
 .sobre img {
     height: auto;
     width: 420px;
     border-radius: 400px;
-    border: 3px #aed36c solid;
 }
 
 .sobre-texto {
@@ -121,4 +129,18 @@ a {
     .sobre-texto p {
         max-width: 100%; /* Define largura máxima para evitar que o texto ultrapasse a largura do contêiner */
     }
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
 }
