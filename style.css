@@ -38,19 +38,26 @@ h2 {
 
 .social-media {
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
     display: flex;
+    text-align: center;
 }
 
 .social-media a {
     text-decoration: none;
     color: #e9ebed;
     padding: 1rem 4rem;
+    margin-right: 1rem;
+    margin-bottom: 0.7rem;
     border: 1px solid #e9ebed;
     border-radius: 10px;
     min-width: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     transition: 0.5s ease-in-out;
 }
 
