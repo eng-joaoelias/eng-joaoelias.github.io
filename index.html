@@ -1,55 +1,488 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Manutenção</title>
-    <meta charset="utf-8"/>
-    <meta name="robots" content="noindex"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      body { text-align: center; padding: 20px; font: 20px Helvetica, sans-serif; color: #efe8e8; }
-      @media (min-width: 768px){
-        body{ padding-top: 150px; }
-      }
-      h1 { font-size: 50px; }
-      article { display: block; text-align: left; max-width: 650px; margin: 0 auto; }
-      a { color: #dc8100; text-decoration: none; }
-      a:hover { color: #efe8e8; text-decoration: none; }
-    </style>
-  </head>
-  <body bgcolor="2e2929">
-    <article>
-        <h1>Estaremos de volta em breve!</h1>
-        <div>
-            <p>Peço desculpas pelo inconveniente, mas estou realizando algumas manutenções no momento. Se precisar, você ainda pode me contatar pelo <a href="mailto:joaoelias022@gmail.com">e-mail</a>. Essa página estará novamente online em breve! Agradeço pela sua paciência e compreensão.</p>
-            <p>&mdash; João Elias</p>
-            
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfólio do João Elias">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/eng-joaoelias/projeto-hamburgueria/main/assets/restaurante/logo.jpg">
+  <meta property="og:description"
+    content="Portfólio de João Elias Ferraz Santana, engenheiro da computação e desenvolvedor. Projetos, habilidades e experiências." />
+  <meta property="og:site_name" content="Portfólio do João Elias">
+  <meta name="keywords"
+    content="portfólio, João Elias Ferraz, engenheiro da computação, projetos, habilidades, experiências, programação, desenvolvimento web, GitLab, GitHub, LinkedIn, Front-End, desenvolvedor">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Portfólio - João Elias</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <a class="header-title" href="/">
+      <h1>
+        eng-joaoelias
+      </h1>
+    </a>
+
+
+    <nav class="navbar">
+      <button class="menu-hamburguer"></button>
+
+      <ul class="navbar-links">
+        <li><a href="#person">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contacts">Contatos</a></li>
+      </ul>
+    </nav>
+
+  </section>
+  <!-- End Header -->
+
+  <!-- Person -->
+  <section id="person">
+    <div class="person-content">
+      <div class="person-name">
+        <h1>Olá, <span></span></h1>
+        <h1>Meu nome é <span></span></h1>
+        <h1>João Elias <span></span></h1>
+      </div>
+
+      <div class="stacks-content">
+        <h3>Techs :</h3>
+
+
+        <ul class="stacks">
+          <li>
+            <div data="HTML">
+              <img src="./svg/html.svg" alt="html-icon">
+            </div>
+          </li>
+
+          <li>
+            <div data="CSS">
+              <img src="./svg/css.svg" alt="css-icon">
+            </div>
+          </li>
+
+          <li>
+            <div data="JS">
+              <img src="./svg/js.svg" alt="js-icon">
+            </div>
+          </li>
+
+          <li>
+            <div data="PHP">
+              <img src="./svg/new-php-logo.svg" alt="php-icon">
+            </div>
+          </li>
+
+          <li>
+            <div data="PostgreSQL">
+              <img src="./svg/postgre-sql.svg" alt="postgresql-icon">
+            </div>
+          </li>
+
+          <li>
+            <div data="JAVA">
+              <img src="./svg/java-icon.svg" alt="java-icon">
+            </div>
+          </li>
+
+          <li>
+            <div data="C">
+              <img src="./svg/c-programming-language.svg" alt="c-icon">
+            </div>
+          </li>
+
+          <li>
+            <div data="PYTHON">
+              <img src="./svg/python.svg" alt="python-icon">
+            </div>
+          </li>
+
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="person-background">
+      <div class="wrapper-profile-photo">
+        <img class="profile-photo" src="./img/eng-joaoelias.jpg" alt="Foto do João Elias">
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/eng-joaoelias" target="_blank">
+          <img src="./svg/logo-github.svg" alt="icon-github">
+        </a>
+        <a href="https://www.instagram.com/eliasjoao1" target="_blank">
+          <img src="./svg/logo-insta.svg" alt="icon-insta">
+        </a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-elias-ferraz-santana-9a47a218a/" target="_blank">
+          <img src="./svg/logo-linkedin.svg" alt="icon-linkin">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Person -->
+
+  <!-- About -->
+  <section id="about">
+    <div class="background-about">
+      <div class="img-wrapper">
+        <img src="./img/img.2.jpg" alt="img2-notebook">
+      </div>
+    </div>
+
+    <div class="box-about">
+      <div class="section-subtitle">
+        <h2>
+          <p>&#128187;</p>
+          <p><span>Desenvolvedor</span> Front End</p>
+        </h2>
+      </div>
+
+      <h3>
+        Sou um Desenvolvedor Front End com experiências em
+        <p>HTML, CSS, JavaScript, PHP, PostgreSQL, Java e C</p>
+      </h3>
+
+      <h4>
+        Olá! Eu sou João Elias Ferraz Santana, estudante de Engenharia de Computação na Unifacs e
+        Desenvolvimento de Sistemas no IFSULDEMINAS, com sólida experiência em desenvolvimento web (HTML, CSS,
+        JS, PHP), Java, C/C++ e Arduino. Aprimorei minhas habilidades em SQL no IFPB, focando em bancos de dados
+        Postgre. Minha experiência inclui atuação como Desenvolvedor no LABJUS do TJBA, onde trabalhei com PostgreSQL,
+        JavaScript, Java, Banco de Dados Oracle, entre outros. Com perfil dedicado e proativo, valorizo o trabalho em
+        equipe e estou aberto a novos desafios para contribuir
+        significativamente em ambientes de trabalho.
+      </h4>
+
+      <h4>
+        Para mais informações sobre minha experiência, convido você a acessar meu <p>currículo</p>.
+      </h4>
+
+      <div class="button-cta">
+        <a href="https://eng-joaoelias.github.io/curriculum/" aria-label="Acessar curriculo João Elias" target="_blank">
+          Currículo
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End about -->
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="projects-title">
+      <h2>PROJETOS &#129513;</h2>
+    </div>
+
+    <div class="container-projects">
+      <div class="swiper mySwiper">
+        <!-- wrapper-projects -->
+
+        <div class="swiper-wrapper">
+
+          <!-- content-project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="https://bolso-inteligente.flutterflow.app/" target="_blank">
+                <img src="./img/proj01.jpg" alt="Imagem do BolsoInteligente">
+              </a>
+            </div>
+
+            <span>BolsoInteligente</span>
+
+            <p>Um gerenciador de finanças feito com o auxilio da ferramenta de desenvolvimento no-code
+              FlutterFlow</p>
+
+            <div class="cta-project">
+              <a
+                onclick="alert('Infelizmente, por ter sido feito na versão free do FlutterFlow, não tenho acesso ao código fonte.');">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://bolso-inteligente.flutterflow.app/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="https://eng-joaoelias.github.io/muscle-car-legends/" target="_blank">
+                <img src="./img/proj02.jpg" alt="Imagem do projeto Muscle Car Legends">
+              </a>
+            </div>
+
+            <span>Muscle Car Legends</span>
+
+            <p>Um projeto web que celebra os icônicos muscle cars dos anos 1970. Feito com o uso de HTML,
+              CSS e JS, além de usar animações do <a href="https://animista.net/" target="_blank">animista</a></p>
+
+            <div class="cta-project">
+              <a href="https://github.com/eng-joaoelias/muscle-car-legends" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://eng-joaoelias.github.io/muscle-car-legends/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="https://projeto-hamburgueria-sooty.vercel.app/" target="_blank">
+                <img src="./img/proj03.jpg" alt="Imagem da página da SaborArte Burgers">
+              </a>
+            </div>
+
+            <span>SaborArte Burgers</span>
+
+            <p>Um projeto para uma hamburgueria fictícia. Feito com o objetivo de aplicar conceitos práticos
+              de HTML, CSS e JS, com o uso de <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>.</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/eng-joaoelias/projeto-hamburgueria" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://projeto-hamburgueria-sooty.vercel.app/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="https://eng-joaoelias.github.io/annotator/" target="_blank">
+                <img src="./img/proj04.jpg" alt="Imagem para o projeto do web app Annotator">
+              </a>
+            </div>
+
+            <span>Annotator</span>
+
+            <p>Feito com HTML, CSS e JS. É possível criar, visualizar, editar e excluir anotações,
+              armazenadas localmente no navegador usando o Local Storage.</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/eng-joaoelias/annotator" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://eng-joaoelias.github.io/annotator/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="https://profilehub.infinityfreeapp.com/" target="_blank">
+                <img src="./img/proj05.gif" alt="Imagem para o sistema web Profile Hub">
+              </a>
+            </div>
+
+            <span>Profile Hub</span>
+
+            <p>Feito com HTML, CSS, JS, PHP e a <a href="https://viacep.com.br/" target="_blank">API
+                ViaCEP</a>, consiste em um sistema web onde cada usuário pode criar uma conta e editar
+              suas informações pessoais.</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/eng-joaoelias/profile-hub" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://profilehub.infinityfreeapp.com/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="https://rescueapp-sandbox.mxapps.io/" target="_blank">
+                <img src="./img/proj06.gif" alt="Imagem para o web app SOS Patinhas">
+              </a>
+            </div>
+
+            <span>SOS Patinhas</span>
+
+            <p>Desenvolvido em parceria com <a href="https://www.linkedin.com/in/rcqueiroz/" target="_blank">Raique</a>,
+              facilita o resgate de animais, integrando ChatGPT para
+              conectar usuários a instituições especializadas. Construído com <a href="https://www.mendix.com/"
+                target="_blank">Mendix</a></p>
+
+            <div class="cta-project">
+              <a
+                onclick="alert('Infelizmente, por ter sido feito com o Mendix, os códigos não são perfeitamente exportáveis. Então, optei por não disponibilizar o repositório.');">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://rescueapp-sandbox.mxapps.io/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="https://youtu.be/8a1tgaIVRLU" target="_blank">
+                <img src="./img/proj09.jpg" alt="Imagem para o projeto Flappy Bird Automatico">
+              </a>
+            </div>
+
+            <span>Flappy Bird Automatizado</span>
+
+            <p>Um projeto em Java feito durante a Faculdade com o objetivo de consolidar conhecimentos vistos na
+              disciplina Inteligência Artificial. Desenvolvido com a biblioteca gráfica <a
+                href="https://processing.org/" target="_blank">Processing</a>.</p>
+
+            <div class="cta-project">
+              <a href="https://gitlab.com/joao_elias/flappy-bird-ia-java/" target="_blank">
+                Código
+                <i class="fa-brands fa-gitlab"></i>
+              </a>
+              <a href="https://youtu.be/8a1tgaIVRLU" target="_blank">
+                Demo
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="https://eng-joaoelias.github.io/smasnug-calc/" target="_blank">
+                <img src="./img/proj07.gif" alt="img-conversor">
+              </a>
+            </div>
+
+            <span>Calculadora Smasnug</span>
+
+            <p>Realiza operações matemáticas básicas. Feita com HTML, CSS e JS, tem uma
+              interface limpa e amigável, bem como alterna automaticamente para temas claros e escuros.</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/eng-joaoelias/smasnug-calc" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://eng-joaoelias.github.io/smasnug-calc/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="https://eng-joaoelias.github.io/spotify-clone/" target="_blank">
+                <img src="./img/proj08.jpg" alt="Imagem para o clone do Spotify">
+              </a>
+            </div>
+
+            <span>Spotifun</span>
+
+            <p>Um clone que usa tecnologias front end do Spotify. Há duas músicas reais de amostra no
+              projeto para comprovar funcionalidade (final da página).</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/eng-joaoelias/spotify-clone/" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://eng-joaoelias.github.io/spotify-clone/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
         </div>
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            <p class="day"></p>
-            <p class="hour"></p>
-            <p class="minute"></p>
-            <p class="second"></p>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+
+
+      </div>
+    </div>
+
+
+  </section>
+  <!-- End Projects -->
+
+  <section id="contacts">
+    <div class="contact-icon-content">
+      <h2>Contato &#128241;</h2>
+    </div>
+
+    <div class="contact-icons-wrapper">
+      <div class="contact-icon-content">
+        <div class="contact-icon">
+          <i class="fa-solid fa-map-location-dot"></i>
         </div>
-    </article>
-    <script>
-        const countDown = () => {
-            const countDay = new Date('June 23, 2024 00:00:00');
-            const now = new Date();
-            const counter = countDay - now;
-            const second = 1000;
-            const minute = second * 60;
-            const hour = minute * 60;
-            const day = hour * 24;
-            const textDay = Math.floor(counter / day);
-            const textHour = Math.floor((counter % day) / hour);
-            const textMinute = Math.floor((counter % hour) / minute);
-            const textSecond = Math.floor((counter % minute) / second)
-            document.querySelector(".day").innerText = textDay + ' Dias';
-            document.querySelector(".hour").innerText = textHour + ' Horas';
-            document.querySelector(".minute").innerText = textMinute + ' Minutos';
-            document.querySelector(".second").innerText = textSecond + ' Segundos';
-        }
-        setInterval(countDown, 1000);
-    </script>
-  </body>
+        <div class="contact-info">
+          <span>Localização</span>
+          <p>Bahia, Brasil</p>
+        </div>
+      </div>
+
+      <div class="contact-icon-content">
+        <div class="contact-icon">
+          <i class="fa-solid fa-envelope-open-text"></i>
+        </div>
+        <div class="contact-info">
+          <span>E-mail</span>
+          <a href="mailto:joaoelias022@gmail.com" target="_blank">
+            joaoelias022@gmail.com
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container-footer">
+      <h2>Feito com &#128154; por</h2>
+      <h3>João Elias &copy; <span id="today-year"></span></h3>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
 </html>
