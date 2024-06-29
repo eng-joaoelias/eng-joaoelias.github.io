@@ -6,14 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Portfólio do João Elias">
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/eng-joaoelias/projeto-hamburgueria/main/assets/restaurante/logo.jpg">
+  <meta property="og:title" content="João Elias Ferraz Santana - Portfólio">
+  <meta property="og:image" content="./img/logo.jpg">
   <meta property="og:description"
-    content="Portfólio de João Elias Ferraz Santana, engenheiro da computação e desenvolvedor. Projetos, habilidades e experiências." />
-  <meta property="og:site_name" content="Portfólio do João Elias">
-  <meta name="keywords"
-    content="portfólio, João Elias Ferraz, engenheiro da computação, projetos, habilidades, experiências, programação, desenvolvimento web, GitLab, GitHub, LinkedIn, Front-End, desenvolvedor">
+    content="Explore o portfólio de João Elias Ferraz Santana, engenheiro e desenvolvedor web. Conheça seus projetos, habilidades e trajetória profissional.">
+  <meta property="og:site_name" content="João Elias Ferraz Santana - Portfólio">
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -212,8 +210,12 @@
               FlutterFlow</p>
 
             <div class="cta-project">
-              <a
-                onclick="alert('Infelizmente, por ter sido feito na versão free do FlutterFlow, não tenho acesso ao código fonte.');">
+              <a onclick="
+                swal({
+                  icon: 'info',
+                  title: 'Código Inacessível',
+                  text: 'Infelizmente, por ter sido feito na versão free do FlutterFlow, não tenho acesso ao código fonte.',
+                  button: 'Entendi!'})">
                 Código
                 <i class="fa-brands fa-github"></i>
               </a>
@@ -337,7 +339,13 @@
 
             <div class="cta-project">
               <a
-                onclick="alert('Infelizmente, por ter sido feito com o Mendix, os códigos não são perfeitamente exportáveis. Então, optei por não disponibilizar o repositório.');">
+                onclick="
+                swal({
+                  icon: 'info',
+                  title: 'Código Inacessível',
+                  text: 'Infelizmente, por ter sido feito com o Mendix, os códigos não são perfeitamente exportáveis. Então, optamos por não disponibilizar o repositório.',
+                  button: 'Entendi!'})
+                ">
                 Código
                 <i class="fa-brands fa-github"></i>
               </a>
@@ -369,6 +377,30 @@
               <a href="https://youtu.be/8a1tgaIVRLU" target="_blank">
                 Demo
                 <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="https://eng-joaoelias.github.io/projeto-porsche/" target="_blank">
+                <img src="./img/proj10.jpg" alt="Imagem do projeto Compra de Porsche">
+              </a>
+            </div>
+
+            <span>Compra de Porsche</span>
+
+            <p>Desenvolvido com HTML, CSS e JavaScript, visa ser um layout responsivo de uma página de compra. Para esse
+              caso, foi utilizado como exemplo o icônico 911 GTS Turbo.</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/eng-joaoelias/projeto-porsche/" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://eng-joaoelias.github.io/projeto-porsche/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
@@ -480,6 +512,7 @@
   </section>
   <!-- End Footer -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./node_modules/sweetalert/dist/sweetalert.min.js"></script>
 
   <script src="script.js"></script>
 
