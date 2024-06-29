@@ -7,10 +7,11 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="João Elias Ferraz Santana - Portfólio">
-  <meta property="og:image" content="https://github.com/eng-joaoelias/eng-joaoelias.github.io/blob/main/img/logo.jpg?raw=true">
-  <meta property="og:description" content="Explore o portfólio de João Elias Ferraz Santana, engenheiro e desenvolvedor web. Conheça seus projetos, habilidades e trajetória profissional.">
+  <meta property="og:image" content="./img/logo.jpg">
+  <meta property="og:description"
+    content="Explore o portfólio de João Elias Ferraz Santana, engenheiro e desenvolvedor web. Conheça seus projetos, habilidades e trajetória profissional.">
   <meta property="og:site_name" content="João Elias Ferraz Santana - Portfólio">
-  
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -209,8 +210,12 @@
               FlutterFlow</p>
 
             <div class="cta-project">
-              <a
-                onclick="alert('Infelizmente, por ter sido feito na versão free do FlutterFlow, não tenho acesso ao código fonte.');">
+              <a onclick="
+                swal({
+                  icon: 'info',
+                  title: 'Código Inacessível',
+                  text: 'Infelizmente, por ter sido feito na versão free do FlutterFlow, não tenho acesso ao código fonte.',
+                  button: 'Entendi!'})">
                 Código
                 <i class="fa-brands fa-github"></i>
               </a>
@@ -333,8 +338,13 @@
                 target="_blank">Mendix</a></p>
 
             <div class="cta-project">
-              <a
-                onclick="alert('Infelizmente, por ter sido feito com o Mendix, os códigos não são perfeitamente exportáveis. Então, optei por não disponibilizar o repositório.');">
+              <a onclick="
+                swal({
+                  icon: 'info',
+                  title: 'Código Inacessível',
+                  text: 'Infelizmente, por ter sido feito com o Mendix, os códigos não são perfeitamente exportáveis. Então, optamos por não disponibilizar o repositório.',
+                  button: 'Entendi!'})
+                ">
                 Código
                 <i class="fa-brands fa-github"></i>
               </a>
@@ -379,7 +389,8 @@
 
             <span>Compra de Porsche</span>
 
-            <p>Desenvolvido com HTML, CSS e JavaScript, visa ser um layout responsivo de uma página de compra. Para esse caso, foi utilizado como exemplo o icônico 911 GTS Turbo.</p>
+            <p>Desenvolvido com HTML, CSS e JavaScript, visa ser um layout responsivo de uma página de compra. Para esse
+              caso, foi utilizado como exemplo o icônico 911 GTS Turbo.</p>
 
             <div class="cta-project">
               <a href="https://github.com/eng-joaoelias/projeto-porsche/" target="_blank">
@@ -500,6 +511,9 @@
   </section>
   <!-- End Footer -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="script.js"></script>
 
